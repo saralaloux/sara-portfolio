@@ -1,0 +1,33 @@
+.works {
+    height: 100vh;
+    display: block;
+    padding: 1rem;
+
+    @include breakpoint (md) {
+      padding: 3rem;
+    }
+    &__title {
+        display: block;
+        color: $primary;
+        font-family: $font1;
+        font-size: 4rem;
+        text-align: right;
+    }
+    &__wrapper {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      &__content {
+        width: 300px;
+        // position: relative;
+        img {
+          width: 280px;
+          // height: 150px;
+          &:hover{
+            background-color: $primary;
+          }
+        }
+      }
+    }
+  }

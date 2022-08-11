@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+//************* VARIABLES ****************//
+
+$font1: 'Bebas Neue', cursive;
+$font2 : 'Roboto', sans-serif;
+
+$primary: #e6b459;
+$secondary: #EBC37A;
+$dark: #282c34;
+$darkest: #464646;
+$light: white;
+
+
+$width: 768px;
+
+// spacing
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+// border radius
+$borderRadius-s: 12px;
+$borderRadius-l: 50px;
+
+
+//************* MIXINS ****************//
+
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    @else if $point == lg {
+        @media (min-width: 1250px) {
+            @content;
+        }
+    }
+}
+
+@mixin button ($bg-color: $primary, $border: none, $color: $light) {
+    height: 40px;
+    margin: 0.4rem;
+    background-color: $bg-color;
+    border: $border;
+    color: $color;
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 50px;
+    &:hover {
+        color: $primary;
+        background-color: $secondary;
+        color: $light;
+    }
+    &:active {
+        animation-name: shutter-radial;
+        animation-duration: 0.3s;
+    }
+}

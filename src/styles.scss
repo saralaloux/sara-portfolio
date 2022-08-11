@@ -1,0 +1,28 @@
+@import './global';
+@import './components/navbar/navbar';
+@import './components/homepage/homepage';
+@import './components/contact/contact';
+@import './components/works/works';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: $font2;
+}
+.app {
+    height: 100%;
+    main {
+        height: calc(100vh - 200px);
+        // margin-top: -200px;
+    }
+// > * {
+//     height: calc(100vh + 100px);
+// }
+}
+
+
+

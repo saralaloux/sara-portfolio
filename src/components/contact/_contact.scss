@@ -1,0 +1,103 @@
+.contact {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint(md) {
+        height: calc(100vh + 100px);
+        position: relative;
+        background-image: url(../../assets/bg_image.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      }
+}
+.title {
+    @include breakpoint(md) {
+        display: block;
+        color: white;
+        background-color: $primary;
+        height: 350px;
+        position: relative;
+        z-index: 2;
+        left: 100px;
+        h2 {
+          font-family: $font1;
+          font-size: 5.5rem;
+          line-height: 5rem;
+          width: 250px;
+          height: 150px;
+          margin: 80px 80px 20px 20px;
+        }
+    }
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    @include breakpoint(md) {
+      position: relative;
+      left: -100px;
+    }
+        &__content {  
+        @include breakpoint(md) {
+          padding: 60px 60px 60px 250px;
+          background-color: $darkest;
+          width: 100%;
+        }
+        button {
+          @include button ();
+          width: 150px;
+        }
+    }
+}
+.input {
+    position: relative;
+    display: flex;
+    width: 100%;
+    &__placeholder {
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      color: grey;
+      transition: transform 120ms ease-in;
+    }
+    &__field {
+      padding-left: 15px;
+      box-sizing: border-box;
+      display: block;
+      width: 300px;
+        &:focus,
+          &:not(:placeholder-shown) {
+          outline: none;
+        & + .input__placeholder {
+          background: white;
+          padding: 0 0.4rem;
+          animation-duration: 0.3s;
+          animation-name: moveOn;
+          transform: translateY(-100%) scale(0.7);
+        }
+      }
+    }
+    .input__size {
+        height: 40px;
+        border: 1px solid $primary;
+        margin: 0.2rem 0;
+        border-radius: 50px;
+    }
+    .textarea__size {
+      font-family: $font2;
+      padding-top: 15px;
+        border: 1px solid $primary;
+        margin: 0.4rem 0;
+        border-radius: 20px;
+        width: 300px;
+    }
+  }
+  @keyframes moveOn {
+    from {
+      transform: none;
+    }
+    to {
+      transform: translateY(-100%) scale(0.7);
+    }
+  }
