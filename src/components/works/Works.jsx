@@ -1,3 +1,7 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
 import {data} from "../../data"
 
 const Work = () => {
@@ -6,16 +10,26 @@ const Work = () => {
             <h2 className='works__title'>
                 My works
             </h2>
-            <div className='works__wrapper'>
+            <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+
             {data.map(work => (
-                <div className="works__wrapper__content"
+                <SwiperSlide className="works__wrapper__content"
                 key={work.id}>
                     {/* <p>{work.description}</p> */}
                     <img src={work.image} alt={work.alt}/>
                     <h3>{work.title}</h3>
-                </div>
+                    </SwiperSlide>
             ))}
-            </div>
+
+            </Swiper>
         </div>
     );
 };

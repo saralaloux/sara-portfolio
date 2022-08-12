@@ -309,7 +309,6 @@
 }
 
 .contact {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,47 +483,9 @@
 }
 
 .works {
-  height: 100vh;
+  width: 90%;
   display: block;
-  padding: 1rem;
-}
-
-@media (min-width: 768px) {
-  .works {
-    padding: 3rem;
-  }
-}
-
-.works__title {
-  display: block;
-  color: #e6b459;
-  font-family: "Bebas Neue", cursive;
-  font-size: 4rem;
-  text-align: right;
-}
-
-.works__wrapper {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.works__wrapper__content {
-  width: 300px;
-}
-
-.works__wrapper__content img {
-  width: 280px;
-}
-
-.works__wrapper__content img:hover {
-  background-color: #e6b459;
+  margin: 50px auto 0 auto;
 }
 
 * {
