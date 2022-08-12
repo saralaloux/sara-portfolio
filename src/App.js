@@ -8,9 +8,7 @@ import Contact from "./components/contact/Contact";
 function App() {
   return (
     <div className="app">
-      <header>
         <Navbar />
-      </header>
       <main>
         <Homepage />
         <Works />

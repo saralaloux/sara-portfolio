@@ -19,7 +19,7 @@ export default function Homepage () {
     return (
         <div className="homepage" id="homepage">
             <div className='homepage__title'>
-            <h2>Hello World</h2>
+            <h2>Hello <br/>World</h2>
             </div>
             <div className="homepage__content">
                 <div className="homepage__content__presentation">
@@ -28,16 +28,16 @@ export default function Homepage () {
                 <div className="homepage___content__ityped">
                     <p><span ref={textRef}></span></p>
                 </div>
-                <div className="homepage__content__buttons">
-                    <button className="homepage__content__buttons__dark">Get In Touch</button>
-                    <button className="homepage__content__buttons__light">My projects</button>
-                </div>
-                <div className="homepage__content__link">
-                    <ul>
-                        <li><Link to="https://github.com/saralaloux"><DiGithubBadge /></Link></li>
-                        <li><Link to="https://www.linkedin.com/in/saralaloux/"><TiSocialLinkedinCircular /></Link></li>
-                    </ul>
-                </div>
+            </div>
+            <div className="homepage__buttons">
+                <button className="homepage__buttons__dark">Get In Touch</button>
+                <button className="homepage__buttons__light">My projects</button>
+            </div>
+            <div className="homepage__link">
+                <ul>
+                    <li><Link to="https://github.com/saralaloux"><DiGithubBadge /></Link></li>
+                    <li><Link to="https://www.linkedin.com/in/saralaloux/"><TiSocialLinkedinCircular /></Link></li>
+                </ul>
             </div>
         </div>
     )

@@ -30,7 +30,7 @@ const Header = () => {
     };
 
     return (
-<header className='header'>
+<div className='header'>
     <div className='header__content'>
         <h2 className='header__content__logo'>LLX.</h2>
         <nav className={`header__content__nav ${
@@ -57,7 +57,7 @@ const Header = () => {
             )}
         </div>
     </div>
-</header>
+</div>
     );
 };
 export default Header;

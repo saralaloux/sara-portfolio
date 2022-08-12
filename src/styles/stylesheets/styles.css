@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 .header {
-  display: fixed;
   font-family: "Bebas Neue", cursive;
   height: 100px;
   width: 100%;
@@ -164,6 +163,29 @@
 }
 
 .homepage {
+  font-size: inherit;
+  width: 90%;
+  display: block;
+  margin: 150px auto 0 auto;
+}
+
+.homepage__title h2 {
+  font-size: 6rem;
+  color: #e6b459;
+  line-height: 5rem;
+}
+
+.homepage__content h1 {
+  font-size: 2.5rem;
+}
+
+.homepage__content p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+}
+
+.homepage__buttons {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,58 +196,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
-  font-family: "Bebas Neue", cursive;
-  width: 100%;
-  padding-top: 50px;
 }
 
-.homepage__title h2 {
-  font-size: 8rem;
-  color: #e6b459;
-  line-height: 7rem;
-}
-
-.homepage__content__presentation h1 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 2.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #464646;
-  line-height: 3rem;
-  text-align: center;
-  margin-bottom: 0.8rem;
-}
-
-@media (min-width: 768px) {
-  .homepage__content__presentation h1 {
-    text-align: left;
-  }
-}
-
-.homepage__content__ityped h2 {
-  color: blue;
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.homepage__content__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.homepage__content__buttons__dark {
+.homepage__buttons__dark {
   height: 40px;
+  width: 300px;
   margin: 0.4rem;
   background-color: #e6b459;
   border: none;
@@ -235,21 +210,22 @@
   border-radius: 50px;
 }
 
-.homepage__content__buttons__dark:hover {
+.homepage__buttons__dark:hover {
   color: #e6b459;
   background-color: #EBC37A;
   color: white;
 }
 
-.homepage__content__buttons__dark:active {
+.homepage__buttons__dark:active {
   -webkit-animation-name: shutter-radial;
           animation-name: shutter-radial;
   -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
 }
 
-.homepage__content__buttons__light {
+.homepage__buttons__light {
   height: 40px;
+  width: 300px;
   margin: 0.4rem;
   background-color: white;
   border: 1px solid #e6b459;
@@ -259,13 +235,13 @@
   border-radius: 50px;
 }
 
-.homepage__content__buttons__light:hover {
+.homepage__buttons__light:hover {
   color: #e6b459;
   background-color: #EBC37A;
   color: white;
 }
 
-.homepage__content__buttons__light:active {
+.homepage__buttons__light:active {
   -webkit-animation-name: shutter-radial;
           animation-name: shutter-radial;
   -webkit-animation-duration: 0.3s;
@@ -273,7 +249,7 @@
 }
 
 @media (min-width: 768px) {
-  .homepage__content__buttons {
+  .homepage__buttons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -281,7 +257,7 @@
   }
 }
 
-.homepage__content__link ul {
+.homepage__link ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,13 +268,13 @@
   padding: 0;
 }
 
-.homepage__content__link ul li {
+.homepage__link ul li {
   margin-bottom: 0;
   margin-right: 10px;
   margin-top: 10px;
 }
 
-.homepage__content__link ul li a {
+.homepage__link ul li a {
   color: #464646;
   font-size: 2rem;
   padding: 2rem 1.25rem;
@@ -403,6 +379,7 @@
 
 .form__content button {
   height: 40px;
+  width: 300px;
   margin: 0.4rem;
   background-color: #e6b459;
   border: none;
@@ -558,7 +535,7 @@
 
 body {
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Bebas Neue", cursive;
 }
 
 .app {
@@ -566,5 +543,13 @@ body {
 }
 
 .app main {
-  height: calc(100vh - 200px);
+  overflow-x: hidden;
+  height: calc(100vh - 100px);
+  margin-top: -100px;
+  position: relative;
+}
+
+.app main * > {
+  width: 100%;
+  height: calc(100vh + 100px);
 }
