@@ -21,13 +21,14 @@
     //   &__content {
     //     // width: 300px;
     //     // position: relative;
-    //     img {
-    //       width: 280px;
-    //       // height: 150px;
-    //       &:hover{
-    //         background-color: $primary;
-    //       }
-    //     }
+        img {
+          width: 400px;
+          // height: 150px;
+          &:hover{
+            background-color: $primary;
+          }
+
+        }
     //   }
     // }
   }

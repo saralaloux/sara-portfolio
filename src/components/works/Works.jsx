@@ -11,7 +11,7 @@ const Work = () => {
                 My works
             </h2>
             <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
         spaceBetween={30}
         pagination={{
           clickable: true,

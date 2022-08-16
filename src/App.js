@@ -1,7 +1,8 @@
 import './styles/stylesheets/styles.css';
 import Navbar from "./components/navbar/Navbar";
 import Homepage from "./components/homepage/Homepage";
-import Works from './components/works/Works';
+import Services from "./components/services/Services";
+// import Works from './components/works/Works';
 import Contact from "./components/contact/Contact";
 
 
@@ -11,7 +12,8 @@ function App() {
         <Navbar />
       <main>
         <Homepage />
-        <Works />
+        <Services />
+        {/* <Works /> */}
         <Contact />
       </main>
     </div>
