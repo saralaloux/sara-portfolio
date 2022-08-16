@@ -1,0 +1,21 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+.cards {
+     height: 350px;
+     width: 275px;
+     border-radius: $spacing-52;
+     margin: $spacing-12 0;
+     box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: $light;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        border: 1px solid $primary;
+        width: 90%;
+        height: 90%;
+    }
+}
