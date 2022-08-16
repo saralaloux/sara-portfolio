@@ -58,7 +58,7 @@ $borderRadius-l: $spacing-52;
 @mixin button ($bg-color: $primary, $border: none, $color: $light) {
     height: $spacing-56;
     width: 300px;
-    margin: 0.5rem;
+    margin: 0.5rem 0;
     background-color: $bg-color;
     border: $border;
     color: $color;
