@@ -28,7 +28,6 @@ const Work = () => {
                     <h3>{work.title}</h3>
                     </SwiperSlide>
             ))}
-
             </Swiper>
         </div>
     );
