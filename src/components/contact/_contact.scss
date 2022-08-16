@@ -1,10 +1,7 @@
 .contact {
-    // height: 100vh;
     display: flex;
     flex-direction: column;
-    // width: 90%;
-    // justify-content: center;
-    // align-items: center;
+    margin: $spacing-48 auto;
     @include breakpoint(md) {
         height: calc(100vh + 100px);
         position: relative;
@@ -16,7 +13,7 @@
 }
 .title {
   text-align: left;
-  padding: 20px;
+  padding: $spacing-20;
     @include breakpoint(md) {
         display: block;
         color: white;
@@ -28,8 +25,8 @@
     }
     h2 {
       font-family: $font1;
-      font-size: 2.5rem;
-      line-height: 2.3rem;
+      font-size: 3rem;
+      line-height: 2.5rem;
       color: $primary;
       @include breakpoint(md) {
         font-size: 5.5rem;
@@ -90,7 +87,7 @@
       }
     }
     .input__size {
-        height: 50px;
+        height: $spacing-52;
         border: 1px solid $primary;
         margin: 0.4rem 0;
         border-radius: 50px;

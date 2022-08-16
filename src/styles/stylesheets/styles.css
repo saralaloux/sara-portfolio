@@ -166,7 +166,7 @@
   font-size: inherit;
   width: 90%;
   display: block;
-  margin: 50px auto 0 auto;
+  margin: 48px auto 0 auto;
 }
 
 .homepage__title h2 {
@@ -199,15 +199,15 @@
 }
 
 .homepage__buttons__dark {
-  height: 50px;
+  height: 56px;
   width: 300px;
-  margin: 0.4rem;
+  margin: 0.5rem;
   background-color: #e6b459;
   border: none;
   color: white;
   font-family: inherit;
   font-size: 1rem;
-  border-radius: 50px;
+  border-radius: 52px;
 }
 
 .homepage__buttons__dark:hover {
@@ -224,15 +224,15 @@
 }
 
 .homepage__buttons__light {
-  height: 50px;
+  height: 56px;
   width: 300px;
-  margin: 0.4rem;
+  margin: 0.5rem;
   background-color: white;
   border: 1px solid #e6b459;
   color: #e6b459;
   font-family: inherit;
   font-size: 1rem;
-  border-radius: 50px;
+  border-radius: 52px;
 }
 
 .homepage__buttons__light:hover {
@@ -316,6 +316,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 48px auto;
 }
 
 @media (min-width: 768px) {
@@ -351,8 +352,8 @@
 
 .title h2 {
   font-family: "Bebas Neue", cursive;
-  font-size: 2.5rem;
-  line-height: 2.3rem;
+  font-size: 3rem;
+  line-height: 2.5rem;
   color: #e6b459;
 }
 
@@ -395,15 +396,15 @@
 }
 
 .form__content button {
-  height: 50px;
+  height: 56px;
   width: 300px;
-  margin: 0.4rem;
+  margin: 0.5rem;
   background-color: #e6b459;
   border: none;
   color: white;
   font-family: inherit;
   font-size: 1rem;
-  border-radius: 50px;
+  border-radius: 52px;
   width: 150px;
 }
 
@@ -463,7 +464,7 @@
 }
 
 .input .input__size {
-  height: 50px;
+  height: 52px;
   border: 1px solid #e6b459;
   margin: 0.4rem 0;
   border-radius: 50px;

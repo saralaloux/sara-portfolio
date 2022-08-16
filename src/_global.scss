@@ -13,15 +13,30 @@ $darkest: #464646;
 $light: white;
 
 
-$width: 768px;
+// $width: 768px;
 
 // spacing
+$spacing-4: 4px;
+$spacing-8: 8px;
+$spacing-12: 12px;
+$spacing-16: 16px;
 $spacing-md: 16px;
+$spacing-20: 20px;
+$spacing-24: 24px;
+$spacing-28: 28px;
+$spacing-32: 32px;
 $spacing-lg: 32px;
+$spacing-36: 36px;
+$spacing-40: 40px;
+$spacing-44: 44px;
+$spacing-48: 48px;
+$spacing-52: 52px;
+$spacing-56: 56px;
+$spacing-60: 60px;
 
 // border radius
-$borderRadius-s: 12px;
-$borderRadius-l: 50px;
+$borderRadius-s: $spacing-12;
+$borderRadius-l: $spacing-52;
 
 
 //************* MIXINS ****************//
@@ -41,15 +56,15 @@ $borderRadius-l: 50px;
 }
 
 @mixin button ($bg-color: $primary, $border: none, $color: $light) {
-    height: 50px;
+    height: $spacing-56;
     width: 300px;
-    margin: 0.4rem;
+    margin: 0.5rem;
     background-color: $bg-color;
     border: $border;
     color: $color;
     font-family: inherit;
     font-size: 1rem;
-    border-radius: 50px;
+    border-radius: $borderRadius-l;
     &:hover {
         color: $primary;
         background-color: $secondary;
