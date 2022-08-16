@@ -2,20 +2,47 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    &__title {
+        font-family: $font1;
+        width: 70px;
+        padding-bottom: $spacing-4;
+        font-size: 3rem;
+        color: $primary;
+        border-bottom: 3px solid $primary;
+        text-align: center;
+    }
     }
 .cards {
      height: 350px;
      width: 275px;
-     border-radius: $spacing-52;
+     border-radius: $spacing-20;
      margin: $spacing-12 0;
-     box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+     box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
     background-color: $light;
     position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     &:after {
         content: "";
+        display: block;
+        left: 10px;
+        bottom: 15px;
         position: absolute;
         border: 1px solid $primary;
         width: 90%;
         height: 90%;
+        border-radius: $spacing-20;
+    }
+    &__icons {
+        font-size: 5rem;
+        color: $primary;
+    }
+    &__title {
+        font-size: 1.8rem;
+    }
+    &__text {
+        font-family: $font2;
     }
 }

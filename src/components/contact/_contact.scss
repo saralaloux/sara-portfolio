@@ -25,9 +25,12 @@
     }
     h2 {
       font-family: $font1;
+      width: 70px;
+      padding-bottom: $spacing-4;
       font-size: 3rem;
       line-height: 2.5rem;
       color: $primary;
+      border-bottom: 3px solid $primary;
       @include breakpoint(md) {
         font-size: 5.5rem;
         line-height: 5rem;

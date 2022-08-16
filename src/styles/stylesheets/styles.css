@@ -352,9 +352,12 @@
 
 .title h2 {
   font-family: "Bebas Neue", cursive;
+  width: 70px;
+  padding-bottom: 4px;
   font-size: 3rem;
   line-height: 2.5rem;
   color: #e6b459;
+  border-bottom: 3px solid #e6b459;
 }
 
 @media (min-width: 768px) {
@@ -527,23 +530,61 @@
           align-items: center;
 }
 
+.services__title {
+  font-family: "Bebas Neue", cursive;
+  width: 70px;
+  padding-bottom: 4px;
+  font-size: 3rem;
+  color: #e6b459;
+  border-bottom: 3px solid #e6b459;
+  text-align: center;
+}
+
 .cards {
   height: 350px;
   width: 275px;
-  border-radius: 52px;
+  border-radius: 20px;
   margin: 12px 0;
-  -webkit-box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
   background-color: white;
   position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cards:after {
   content: "";
+  display: block;
+  left: 10px;
+  bottom: 15px;
   position: absolute;
   border: 1px solid #e6b459;
   width: 90%;
   height: 90%;
+  border-radius: 20px;
+}
+
+.cards__icons {
+  font-size: 5rem;
+  color: #e6b459;
+}
+
+.cards__title {
+  font-size: 1.8rem;
+}
+
+.cards__text {
+  font-family: "Roboto", sans-serif;
 }
 
 * {
