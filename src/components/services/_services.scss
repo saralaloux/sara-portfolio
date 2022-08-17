@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: $spacing-24;
     &__title {
+        margin: $spacing-32 0;
         font-family: $font1;
         width: 70px;
         padding-bottom: $spacing-4;
-        font-size: 3rem;
+        font-size: 4rem;
         color: $primary;
         border-bottom: 3px solid $primary;
         text-align: center;

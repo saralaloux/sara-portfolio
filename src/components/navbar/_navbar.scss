@@ -7,6 +7,7 @@
     position: relative;
     z-index: 3;
     background-color: $primary;
+    padding-bottom: 10px;
 
     @include breakpoint(md) {
         background-color: $light;
@@ -23,6 +24,7 @@
         align-items: center;
         position: relative;
         z-index: 100;
+        background-color: pink;
 
         @include breakpoint(md) {
             padding: 2rem 3rem 0 3rem;
@@ -31,7 +33,9 @@
         }
         &__logo {
             font-size: 2rem;
-            margin-top: 12px;
+            margin-top: 5px;
+            border: 1px solid $primary;
+            padding: 5px 10px;
             }
             &__nav {
                 top: 0;
