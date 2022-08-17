@@ -9,9 +9,7 @@
     // background-color: $primary;
     padding-bottom: 10px;
 
-    @include breakpoint(md) {
-        background-color: $light;
-    }
+
     &__content {
         padding: 0 2rem;
         overflow: hidden;
@@ -30,6 +28,7 @@
             padding: 2rem 3rem 0 3rem;
             align-items: baseline;
             color: $primary;
+            background-color: $light;
         }
         &__logo {
             font-size: 2rem;
@@ -51,6 +50,7 @@
                 background: rgba($dark, 0.9);
                 transform: translate(0);
                 transition: 0.3s ease transform;
+                cursor: pointer;
     
                 @include breakpoint(md) {
                     transform: none;

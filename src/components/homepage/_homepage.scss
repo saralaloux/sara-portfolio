@@ -1,12 +1,26 @@
 .homepage {
     font-size: inherit;
     width: 90%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
     margin: $spacing-48 auto 0 auto;
+    position: relative;
     @include breakpoint(md) {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+
+    }
+    &:after {
+        content: '';
+        display: block;
+        position: absolute; 
+        height: 100%;
+        width: 100%;       
+        background-color: #F2F2F2;
+        clip-path: polygon(100% 0%, 100% 100%, 50% 50%, 0% 100%, 100% 0%);
+        z-index: -1;
+        color: pink;
+
     }
     &__title {
          h2 {
