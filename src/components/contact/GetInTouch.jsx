@@ -1,6 +1,6 @@
 const GetInTouch = () => {
     return (
-        <div className="title">
+        <div className="contact__title">
             <h2>
                 Get<br/>
                 in<br/>

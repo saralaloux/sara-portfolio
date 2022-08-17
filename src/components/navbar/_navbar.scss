@@ -6,7 +6,7 @@
     transition: 0.3s ease all;
     position: relative;
     z-index: 3;
-    background-color: $primary;
+    // background-color: $primary;
     padding-bottom: 10px;
 
     @include breakpoint(md) {
@@ -24,7 +24,7 @@
         align-items: center;
         position: relative;
         z-index: 100;
-        background-color: pink;
+        background-color: $primary;
 
         @include breakpoint(md) {
             padding: 2rem 3rem 0 3rem;

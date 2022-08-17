@@ -1,29 +1,4 @@
-// import React, { useRef, useState } from 'react';
-// import emailjs from '@emailjs/browser';
 const Form = () => {
-
-    // const formRef = useRef();
-    // const [done, setDone] = useState(false);
-    // const refreshPage = () => {
-    //     window.location.reload();
-    // }
-
-    // const handleSubmit = (e) =>{
-    //     e.preventDefault();
-
-    //     emailjs.sendForm(
-    //         'service_edy86tl', 
-    //         'template_58l13fe', 
-    //         formRef.current, 
-    //         'user_VYFLIA1e26gsolGaLqzXP')
-    //   .then((result) => {
-    //       console.log(result.text);
-    //       setDone(true)
-    //   }, (error) => {
-    //       console.log(error.text);
-    //   });
-
-    // }
 
     return (
         <div className="form">

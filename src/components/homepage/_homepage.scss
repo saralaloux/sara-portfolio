@@ -3,6 +3,11 @@
     width: 90%;
     display: block;
     margin: $spacing-48 auto 0 auto;
+    @include breakpoint(md) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
     &__title {
          h2 {
             font-size: 6rem;
