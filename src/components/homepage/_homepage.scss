@@ -1,14 +1,14 @@
 .homepage {
+    height: calc(100vh - 100px);
     font-size: inherit;
-    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
     margin: $spacing-48 auto 0 auto;
     position: relative;
     @include breakpoint(md) {
-
+        margin: $spacing-80 auto 0 auto;
+        height: calc(100vh - 100px);
     }
     &:after {
         content: '';
@@ -23,6 +23,7 @@
 
     }
     &__title {
+        margin: 0 0 0 $spacing-44;
          h2 {
             font-size: 6rem;
             color: $primary;
@@ -37,7 +38,7 @@
         }
     }
     &__content {
-        margin: 0 0 0 $spacing-48;
+        margin: 0 0 0 $spacing-44;
         h1{
             font-size: 2.5rem;
         }

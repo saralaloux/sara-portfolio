@@ -1,8 +1,10 @@
 .contact {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+    // height: 100vh;
+
     @include breakpoint(md) {
-        height: calc(100vh + 100px);
+        height: calc(100vh - 100px);
         position: relative;
         flex-direction: row;
         justify-content: center;

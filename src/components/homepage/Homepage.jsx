@@ -1,8 +1,8 @@
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
-import {TiSocialLinkedinCircular} from "react-icons/ti";
-import {DiGithubBadge} from "react-icons/di"
+// import {TiSocialLinkedinCircular} from "react-icons/ti";
+// import {DiGithubBadge} from "react-icons/di"
 
 export default function Homepage () {
     const textRef = useRef();
@@ -33,12 +33,12 @@ export default function Homepage () {
                 <button className="homepage__buttons__dark">Get In Touch</button>
                 <button className="homepage__buttons__light">My projects</button>
             </div>
-            <div className="homepage__link">
+            {/* <div className="homepage__link">
                 <ul>
                     <li><Link to="https://github.com/saralaloux"><DiGithubBadge /></Link></li>
                     <li><Link to="https://www.linkedin.com/in/saralaloux/"><TiSocialLinkedinCircular /></Link></li>
                 </ul>
-            </div>
+            </div> */}
         </div>
     )
 }

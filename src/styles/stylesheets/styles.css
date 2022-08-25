@@ -162,8 +162,8 @@
 }
 
 .homepage {
+  height: calc(100vh - 100px);
   font-size: inherit;
-  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,9 +174,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
   margin: 48px auto 0 auto;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .homepage {
+    height: calc(100vh - 100px);
+  }
 }
 
 .homepage:after {
@@ -190,6 +195,10 @@
           clip-path: polygon(100% 0%, 100% 100%, 50% 50%, 0% 100%, 100% 0%);
   z-index: -1;
   color: pink;
+}
+
+.homepage__title {
+  margin: 0 0 0 44px;
 }
 
 .homepage__title h2 {
@@ -206,7 +215,7 @@
 }
 
 .homepage__content {
-  margin: 0 0 0 48px;
+  margin: 0 0 0 44px;
 }
 
 .homepage__content h1 {
@@ -244,6 +253,14 @@
   border-radius: 52px;
 }
 
+@media (min-width: 768px) {
+  .homepage__buttons__dark {
+    height: 48px;
+    width: 180px;
+    margin: 0 0.5rem;
+  }
+}
+
 .homepage__buttons__dark:hover {
   color: #e6b459;
   background-color: #EBC37A;
@@ -267,6 +284,14 @@
   font-family: inherit;
   font-size: 1rem;
   border-radius: 52px;
+}
+
+@media (min-width: 768px) {
+  .homepage__buttons__light {
+    height: 48px;
+    width: 180px;
+    margin: 0 0.5rem;
+  }
 }
 
 .homepage__buttons__light:hover {
@@ -354,7 +379,7 @@
 
 @media (min-width: 768px) {
   .contact {
-    height: calc(100vh + 100px);
+    height: calc(100vh - 100px);
     position: relative;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -450,6 +475,14 @@
   font-family: inherit;
   font-size: 1rem;
   border-radius: 52px;
+}
+
+@media (min-width: 768px) {
+  .form__content button {
+    height: 48px;
+    width: 180px;
+    margin: 0 0.5rem;
+  }
 }
 
 .form__content button:hover {
@@ -583,6 +616,12 @@
   border-bottom: 3px solid #e6b459;
   position: absolute;
   right: 10px;
+}
+
+@media (min-width: 768px) {
+  .services__title {
+    height: calc(100vh - 100px);
+  }
 }
 
 .services__content {

@@ -24,7 +24,7 @@
         }
 
         @include breakpoint(md) {
-
+            height: calc(100vh - 100px);
         }
     }
     &__content {
