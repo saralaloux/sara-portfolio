@@ -18,6 +18,7 @@ export default function Homepage () {
 
     return (
         <div className="homepage" id="homepage">
+            <div className="homepage__wrapper">
             <div className='homepage__title'>
             <h2>Hello <br/>World</h2>
             </div>
@@ -39,6 +40,7 @@ export default function Homepage () {
                     <li><Link to="https://www.linkedin.com/in/saralaloux/"><TiSocialLinkedinCircular /></Link></li>
                 </ul>
             </div> */}
+            </div>
         </div>
     )
 }

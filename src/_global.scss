@@ -72,8 +72,8 @@ $borderRadius-l: $spacing-52;
     border-radius: $borderRadius-l;
     @include breakpoint(md){
         height: $spacing-48;
-        width: 180px;
-        margin: 0 0.5rem;
+        width: 160px;
+        margin: 0 0.5rem 0 0;
     }
     &:hover {
         color: $primary;

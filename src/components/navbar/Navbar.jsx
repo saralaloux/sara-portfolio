@@ -42,7 +42,7 @@ const Header = () => {
                     <a href="#homepage" onClick={menuToggleHandler}>Homepage</a>
                 </li>
                 <li>
-                    <a href="#work" onClick={menuToggleHandler}>Works</a>
+                    <a href="#projects" onClick={menuToggleHandler}>Projects</a>
                 </li>
                 <li>
                     <a href="#contact" onClick={menuToggleHandler}>Contact</a>

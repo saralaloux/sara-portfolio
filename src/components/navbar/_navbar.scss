@@ -1,15 +1,10 @@
 .header {
-    // display: fixed;
     font-family: $font1;
-    height: 100px;
+    height: 70px;
     width: 100%;
     transition: 0.3s ease all;
     position: relative;
     z-index: 3;
-    // background-color: $primary;
-    padding-bottom: 10px;
-
-
     &__content {
         padding: 0 2rem;
         overflow: hidden;
@@ -25,13 +20,13 @@
         background-color: $primary;
 
         @include breakpoint(md) {
-            padding: 2rem 3rem 0 3rem;
+            // padding: 2rem 3rem 0 3rem;
             align-items: baseline;
             color: $primary;
             background-color: $light;
         }
         &__logo {
-            font-size: 2rem;
+            font-size: 1.8rem;
             margin-top: 5px;
             border: 1px solid $primary;
             padding: 5px 10px;
@@ -54,7 +49,7 @@
     
                 @include breakpoint(md) {
                     transform: none;
-                    align-items: flex-start;
+                    // align-items: flex-start;
                     background: transparent;
                     width: auto;
                     height: 100%;
@@ -82,7 +77,7 @@
                             }
                         }
                         a {
-                            font-size: 2rem;
+                            font-size: 1.2rem;
                             text-decoration: none;
                             color: inherit;
                             padding: 0.75rem 1.25rem;

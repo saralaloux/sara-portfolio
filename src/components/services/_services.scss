@@ -1,98 +1,93 @@
-.services {
-    padding-top: $spacing-48;
-    &__title {
-        // text-align: left;
-        padding: $spacing-20;
-        text-align: right;
-        h2 {
-            font-family: $font1;
-            // width: 70px;
-            padding-bottom: $spacing-4;
-            font-size: 4rem;
-            line-height: 3.2rem;
-            position: relative;
-            // color: $primary;
-            // border-bottom: 3px solid $primary;
-            &:after {
-                content:'';
-                display: block;
-                width: 70px;
-                border-bottom: 3px solid $primary;
-                position: absolute;
-                right: 10px
-            }
-        }
+// .services {
+//     // height: calc(100vh - 100px);
+//     &__title {
+//         // text-align: left;
+//         padding: $spacing-20;
+//         text-align: right;
+//         h2 {
+//             font-family: $font1;
+//             width: 70px;
+//             padding-bottom: $spacing-4;
+//             font-size: 4rem;
+//             line-height: 3.2rem;
+//             position: relative;
+//             color: $primary;
+//             border-bottom: 3px solid $primary;
+//             &:after {
+//                 content:'';
+//                 display: block;
+//                 width: 70px;
+//                 border-bottom: 3px solid $primary;
+//                 position: absolute;
+//                 right: 10px
+//             }
+//         }
+//     }
+//     &__content {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         @include breakpoint(md) {
+//             flex-direction: row;
+//             justify-content: space-around;
+//             max-width: 1250px;
+//             // height: 100px;
+//             margin: 0 auto;
+//         }
+//     }
+// }
+// .cards {
+//      height: 350px;
+//      width: 275px;
+//     //  border-radius: $spacing-20;
+//      margin: $spacing-12 auto;
+//      background-color: #F6F6F6;
+//     position: relative;
+// //     text-align: center;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     // border-bottom: 1px solid $primary;
+// //     padding-bottom: 10px;
+// @include breakpoint(md) {
+//     height: 300px;
+//     width: 250px;
+// }
+//     &:hover {
+//         border: none;
+//         background-color: $light;
+//         box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
 
-        @include breakpoint(md) {
-            height: calc(100vh - 100px);
-        }
-    }
-    &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        @include breakpoint(md) {
-            flex-direction: row;
-            justify-content: space-around;
-            max-width: 1250px;
-            // height: 100px;
-            margin: 0 auto;
-        }
-    }
-    }
-.cards {
-     height: 350px;
-     width: 275px;
-    //  border-radius: $spacing-20;
-     margin: $spacing-12 0;
-    // background-color: $light;
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid $primary;
-    padding-bottom: 10px;
-    &:hover {
-        border: none;
-        background-color: $light;
-        box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
+//     }
+//     &:after {
+//         content: "";
+//         display: block;
+//         left: 10px;
+//         bottom: 15px;
+//         position: absolute;
+//         border: 1px solid $primary;
+//         width: 90%;
+//         height: 90%;
+//         border-radius: $spacing-20;
+//     }
+//     &__icons {
+//         font-size: 5rem;
+//         color: $light;
+//         background-color: $primary;
+//         border-radius: $spacing-52;
+//         width: 100px;
+//         height: 100px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         margin: auto;
+//     }
+//     &__title {
+//         font-size: 1.8rem;
+//     }
+//     &__text {
+//         font-family: $font2;
+//     }
+// }
 
-    }
-
-    @include breakpoint(md) {
-        height: 300px;
-        width: 250px;
-    }
-
-    // &:after {
-    //     content: "";
-    //     display: block;
-    //     left: 10px;
-    //     bottom: 15px;
-    //     position: absolute;
-    //     border: 1px solid $primary;
-    //     width: 90%;
-    //     height: 90%;
-    //     border-radius: $spacing-20;
-    // }
-    &__icons {
-        font-size: 5rem;
-        color: $light;
-        background-color: $primary;
-        border-radius: $spacing-52;
-        width: 100px;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
-    &__title {
-        font-size: 1.8rem;
-    }
-    &__text {
-        font-family: $font2;
-    }
-}

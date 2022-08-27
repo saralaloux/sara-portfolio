@@ -1,0 +1,126 @@
+.projects {
+display: flex;
+flex-direction: column;
+justify-content: center;
+    &__title {
+
+        h2 {
+            text-align: right;
+            font-family: $font1;
+            font-size: 3rem;
+            position: relative;
+            color: $primary;
+            text-align: right;
+            padding-right: $spacing-52;
+            &:after {
+                content:'';
+                display: block;
+                width: 70px;
+                border-bottom: 3px solid $primary;
+                position: absolute;
+                right: $spacing-52;
+            }
+        }
+    }
+
+    ul {
+        margin-top: $spacing-52;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: $spacing-60;
+        li {
+            text-align: center;
+            font-size: 1.2rem;
+            position: relative;
+            cursor: pointer;
+            color: $darkest;
+            transition: color 0.2s ease;
+            &:after {
+                content:'';
+                display: block;
+                position: absolute;
+                width: 0%;
+                height: 2px;
+                background-color: $primary;
+                transition: width 0.2s ease;
+            }
+            &:hover {
+                &:after {
+                    width: 100%;
+                    transition: width 0.5s ease;
+                }
+            }
+            &.active{
+                color: $primary;
+                &:after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.card__wrapper {
+    margin-top: $spacing-52;
+    display: flex;
+    gap: 2.5rem;
+    // flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    // @include breakpoint(md) {
+    //     flex-direction: row;
+    //     justify-content: center;
+    // }
+
+}
+.card {
+    height: 14rem;
+    width: 10rem;
+    overflow: hidden;
+    box-shadow: 0 2px 20px grey;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 500ms ease-in;
+
+    &__image {
+        height: 7rem;
+        width: 10rem;
+        object-fit: cover;
+
+    }
+    &__title {
+        // padding: 1rem;
+        text-align: center;
+      }
+    
+      &__description {
+        font-family: $font2;
+        font-size: 0.8rem;
+        padding: 0 1rem;
+      }
+    &:hover {
+        transform: scale(1.02);
+    }
+    &__btn {
+        // @include button;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        background-color: $primary;
+        height: $spacing-32;
+        border-radius: $borderRadius-l;
+        border: 1px solid $primary;
+        color: $light;
+        margin-bottom: 0.5rem;
+        &:hover {
+            background-color: $light;
+            color: $primary;
+        }
+    }
+}
