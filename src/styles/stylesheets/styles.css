@@ -202,14 +202,14 @@
 }
 
 .homepage__title h2 {
-  font-size: 6rem;
+  font-size: 5rem;
   color: #e6b459;
-  line-height: 5rem;
+  line-height: 4.5rem;
 }
 
 @media (min-width: 480px) {
   .homepage__title h2 {
-    font-size: 9.5rem;
+    font-size: 9rem;
     line-height: 8rem;
   }
 }
@@ -230,7 +230,7 @@
 }
 
 .homepage__buttons {
-  margin-top: 40px;
+  margin-top: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

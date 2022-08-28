@@ -33,11 +33,11 @@
         //     margin: 0 0 0 $spacing-60;
         // }
          h2 {
-            font-size: 6rem;
+            font-size: 5rem;
             color: $primary;
-            line-height: 5rem;
+            line-height: 4.5rem;
             @include breakpoint(sm) {
-                font-size: 9.5rem;
+                font-size: 9rem;
                 line-height: 8rem;
             }
             @include breakpoint(md) {
@@ -62,7 +62,7 @@
         }
     }
     &__buttons {
-        margin-top: 40px;
+        margin-top: $spacing-28;
         display: flex;
         flex-direction: column;
         align-items: center;
