@@ -1,10 +1,10 @@
 .homepage {
-    height: calc(100vh - 100px);
+    // height: calc(100vh - 100px);
     font-size: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // margin: $spacing-48 auto 0 auto;
+    margin: $spacing-48 auto $spacing-80 auto;
     position: relative;
     @include breakpoint(md) {
         height: calc(100vh - 100px);
@@ -55,7 +55,10 @@
         }
         p {
             font-family: 'Courier New', Courier, monospace;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
+            @include breakpoint(md) {
+                font-size: 1.5rem;
+            }
         }
     }
     &__buttons {

@@ -33,6 +33,11 @@ $spacing-48: 48px;
 $spacing-52: 52px;
 $spacing-56: 56px;
 $spacing-60: 60px;
+$spacing-64: 64px;
+$spacing-68: 68px;
+$spacing-72: 72px;
+$spacing-76: 76px;
+$spacing-80: 80px;
 
 // border radius
 $borderRadius-s: $spacing-12;
@@ -68,7 +73,7 @@ $borderRadius-l: $spacing-52;
     border: $border;
     color: $color;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1.1rem;
     border-radius: $borderRadius-l;
     @include breakpoint(md){
         height: $spacing-48;

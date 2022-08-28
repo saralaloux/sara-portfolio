@@ -157,7 +157,6 @@
 }
 
 .homepage {
-  height: calc(100vh - 100px);
   font-size: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,6 +168,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 48px auto 80px auto;
   position: relative;
 }
 
@@ -220,7 +220,13 @@
 
 .homepage__content p {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .homepage__content p {
+    font-size: 1.5rem;
+  }
 }
 
 .homepage__buttons {
@@ -245,7 +251,7 @@
   border: none;
   color: white;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.1rem;
   border-radius: 52px;
 }
 
@@ -278,7 +284,7 @@
   border: 1px solid #e6b459;
   color: #e6b459;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.1rem;
   border-radius: 52px;
 }
 
@@ -371,6 +377,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 48px auto 80px auto;
 }
 
 @media (min-width: 768px) {
@@ -469,7 +476,7 @@
   border: none;
   color: white;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.1rem;
   border-radius: 52px;
 }
 
@@ -599,6 +606,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 48px auto 80px auto;
 }
 
 .projects__title h2 {
@@ -674,23 +682,36 @@
   display: -ms-flexbox;
   display: flex;
   gap: 2.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 480px) {
+  .card__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .card {
   height: 14rem;
   width: 10rem;
   overflow: hidden;
-  -webkit-box-shadow: 0 2px 20px grey;
-          box-shadow: 0 2px 20px grey;
-  border-radius: 12px;
+  -webkit-box-shadow: 0 1px 10px grey;
+          box-shadow: 0 1px 10px grey;
+  border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
