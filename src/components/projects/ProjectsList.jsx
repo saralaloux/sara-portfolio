@@ -5,8 +5,9 @@ import {SiGithub} from 'react-icons/si';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-// import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { Autoplay } from 'swiper';
+import "swiper/css/autoplay";
+// import { Pagination } from "swiper";
 
 const ProjectsList = () => {
     const [selected, setSelected] = useState('all');
@@ -40,32 +41,18 @@ const ProjectsList = () => {
                     />
                 ))}
             </ul>
-            <div className='card__wrapper'>
-        {data.map(work => (
-        <div className='card' key={work.id}>
-            <div className="card__body">
-                <img className='card__image' src={work.image} alt={work.alt}/>
-                <h3 className='card__title'>{work.title}</h3>
-                <p className="card__description">{work.description}</p>
-            </div>
-            {/* <button className="card__btn">View on github</button> */}
-            <SiGithub className='card__icon'/>
-        </div>
-        ))}
-        </div>
+
 
         <div className="slider__wrapper">
         <Swiper
         slidesPerView={"auto"}
         spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
+        // loop={true}
         autoplay={{
             delay: 2500,
             disableOnInteraction: false,
           }}
-        modules={[Pagination]}
+        modules={[Autoplay]}
         className="mySwiper"
       >
 

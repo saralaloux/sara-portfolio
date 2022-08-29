@@ -798,9 +798,18 @@
   font-size: 1.1rem;
 }
 
-.slider {
+.swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper-slide {
   height: 18rem;
-  width: 12rem;
+  width: 12rem !important;
   overflow: hidden;
   -webkit-box-shadow: 0 3px 10px #eee;
           box-shadow: 0 3px 10px #eee;
@@ -823,26 +832,20 @@
   margin: 15px;
 }
 
-@media (min-width: 768px) {
-  .slider {
-    display: none;
-  }
-}
-
-.slider img {
+.swiper-slide img {
   height: 12rem;
   width: 12rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.slider h3 {
+.swiper-slide h3 {
   padding: 0.5rem;
   text-align: center;
   font-size: 1rem;
 }
 
-.slider p {
+.swiper-slide p {
   font-family: "Roboto", sans-serif;
   font-size: 0.7rem;
   padding: 0 1rem;
