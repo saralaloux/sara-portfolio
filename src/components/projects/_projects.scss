@@ -3,6 +3,16 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 margin: $spacing-48 auto $spacing-80 auto;
+&:after {
+    content: '';
+    display: block;
+    position: absolute; 
+    height: 100%;
+    width: 100%;       
+    background-color: #F2F2F2;
+    clip-path: polygon(0% 20%, 100% 80%, 100% 90%, 0% 30%);
+    z-index: -1;
+}
     &__title {
 
         h2 {
@@ -25,7 +35,7 @@ margin: $spacing-48 auto $spacing-80 auto;
     }
 
     ul {
-        margin-top: $spacing-52;
+        margin-top: $spacing-12;
         padding: 0;
         list-style: none;
         display: flex;
@@ -63,54 +73,56 @@ margin: $spacing-48 auto $spacing-80 auto;
     }
 }
 .card__wrapper {
-    display: flex;
-    // gap: 2.5rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+    display: none;
     @include breakpoint(sm) {
-    flex-wrap: wrap;
-    flex-direction: row;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    @include breakpoint (md) {
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 
 }
 .card {
-    height: 14rem;
-    width: 10rem;
+    height: 18rem;
+    width: 12rem;
     overflow: hidden;
-    box-shadow: 0 1px 10px grey;
+    box-shadow: 0 3px 10px #eee;
+    background-color: $light;
     border-radius: $spacing-4;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // cursor: pointer;
     transition: transform 500ms ease-in;
     margin: 15px;
 
     &__image {
-        height: 7rem;
-        width: 10rem;
+        height: 12rem;
+        width: 12rem;
         object-fit: cover;
 
     }
     &__title {
-        // padding: 1rem;
+        padding: 0.5rem;
         text-align: center;
+        font-size: 1rem;
       }
     
       &__description {
         font-family: $font2;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         padding: 0 1rem;
       }
       @include breakpoint(md){
         &:hover {
             transform: scale(1.02);
+            box-shadow: 0 3px 10px #ddd;
         }
       }
     &__btn {
-        // @include button;
         width: 80%;
         display: block;
         margin: 0 auto;
@@ -125,4 +137,43 @@ margin: $spacing-48 auto $spacing-80 auto;
             color: $primary;
         }
     }
+    &__icon {
+        color: $primary;
+        display: block;
+        margin: auto;
+        font-size: 1.1rem;
+    }
+}
+.slider {
+    height: 18rem;
+    width: 12rem;
+    overflow: hidden;
+    box-shadow: 0 3px 10px #eee;
+    background-color: $light;
+    border-radius: $spacing-4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 500ms ease-in;
+    margin: 15px;
+    @include breakpoint(md) {
+        display: none;
+    }
+    img {
+        height: 12rem;
+        width: 12rem;
+        object-fit: cover;
+
+    }
+    h3 {
+        padding: 0.5rem;
+        text-align: center;
+        font-size: 1rem;
+      }
+    
+      p {
+        font-family: $font2;
+        font-size: 0.7rem;
+        padding: 0 1rem;
+      }
 }
