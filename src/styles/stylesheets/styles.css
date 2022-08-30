@@ -798,37 +798,13 @@
   font-size: 1.1rem;
 }
 
-.swiper-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .swiper-slide {
   height: 18rem;
-  width: 12rem !important;
   overflow: hidden;
   -webkit-box-shadow: 0 3px 10px #eee;
           box-shadow: 0 3px 10px #eee;
   background-color: white;
   border-radius: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition: -webkit-transform 500ms ease-in;
-  transition: -webkit-transform 500ms ease-in;
-  transition: transform 500ms ease-in;
-  transition: transform 500ms ease-in, -webkit-transform 500ms ease-in;
   margin: 15px;
 }
 

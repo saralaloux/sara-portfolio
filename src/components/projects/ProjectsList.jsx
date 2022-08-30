@@ -5,12 +5,10 @@ import {SiGithub} from 'react-icons/si';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import SwiperCore, { Autoplay, Pagination, Navigation, A11y} from 'swiper';
+import { Autoplay, Pagination, Navigation } from 'swiper';
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-SwiperCore.use([Autoplay, Pagination, Navigation, A11y]);
-
 const ProjectsList = () => {
     const [selected, setSelected] = useState('all');
     const [data, setData] = useState([]);
@@ -47,15 +45,14 @@ const ProjectsList = () => {
 
         <div className="slider__wrapper">
         <Swiper
-        slidesPerView={"auto"}
-        spaceBetween={30}
-        centeredSlides={true}
-        // loop={true}
+        slidesPerView={2}
+        spaceBetween={10}
+        loop={true}
         autoplay={{
             delay: 2500,
             disableOnInteraction: false,
           }}
-        modules={[Autoplay, Pagination, Navigation, A11y]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
 

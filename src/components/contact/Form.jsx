@@ -5,9 +5,7 @@ const Form = () => {
 
     const form = useRef();
 
-    const refreshPage = () => {
-        window.location.reload();
-    }
+
         const [done, setDone] = useState(false);
 
     const sendEmail = (e) => {
@@ -21,6 +19,7 @@ const Form = () => {
           .then((result) => {
               console.log(result.text);
               setDone(true)
+              window.location.reload();
           }, (error) => {
               console.log(error.text);
           });
@@ -48,7 +47,7 @@ const Form = () => {
 <button>Submit</button>
 {/* <button onClick={done && refreshPage}>Submit</button>  */}
 {/* {done && "Thanks for you interest and see you later!"} */}
-{refreshPage && done}
+
 </form>
         </div>
     );

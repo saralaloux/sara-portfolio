@@ -144,21 +144,21 @@ margin: $spacing-48 auto $spacing-80 auto;
         font-size: 1.1rem;
     }
 }
-.swiper-wrapper {
-    display: flex;
-    justify-content: center;
-}
+// .swiper-wrapper {
+//     display: flex;
+//     justify-content: center;
+// }
 .swiper-slide {
     height: 18rem;
-    width: 12rem !important; 
+    // width: 12rem !important; 
     overflow: hidden;
     box-shadow: 0 3px 10px #eee;
     background-color: $light;
     border-radius: $spacing-4;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 500ms ease-in;
+    // // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // transition: transform 500ms ease-in;
     margin: 15px;
     // @include breakpoint(md) {
     //     display: none;
