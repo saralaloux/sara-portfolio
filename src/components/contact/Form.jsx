@@ -30,7 +30,7 @@ const Form = () => {
     <span className="input__placeholder">Name</span>
 </label>
 <label className="input">
-    <input className="input__field input__size" name='mail' type="mail" />
+    <input className="input__field input__size" name='mail' type="mail" placeholder=" "/>
     <span className="input__placeholder">Mail Adress</span>
 </label>
 <label className="input">

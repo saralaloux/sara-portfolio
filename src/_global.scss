@@ -75,6 +75,7 @@ $borderRadius-l: $spacing-52;
     font-family: inherit;
     font-size: 1.1rem;
     border-radius: $borderRadius-l;
+    letter-spacing: 0.4px;
     @include breakpoint(md){
         height: $spacing-48;
         width: 160px;

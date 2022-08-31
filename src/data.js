@@ -2,97 +2,81 @@ import myImage1 from "./assets/image1.jpg";
 import myImage3 from "./assets/image3.jpg";
 import myImage4 from "./assets/image4.jpg";
 import myImage6 from "./assets/image6.jpeg";
+import cogip from "./assets/cogip.jpg";
+import woodstock from "./assets/woodstock.jpg";
+import hangman from './assets/hangman.jpg';
+import arm from './assets/arm.jpg'
 
-export const data = [
-    {   id: 1,
-        title: 'Work 1',
-        description: 'Lorem ipsum dolor sit amet,...',
-        image: myImage1,
-        alt: 'alt1',
-    },
-    {   
-        id: 2,
-        title: 'Work 2',
-        description: 'Lorem ipsum dolor sit amet,...',
-        image: myImage3,
-        alt: 'alt2',
-    },
-    {
-        id: 3,
-        title: 'Work 3',
-        description: 'Lorem ipsum dolor sit amet,...',
-        image: myImage4,
-        alt: 'alt3',
-    },
-    {
-        id: 4,
-        title: 'Work 4',
-        description: 'Lorem ipsum dolor sit amet,...',
-        image: myImage6,
-        alt: 'alt4',
-    }
-]
 
 export const allProjects = [
-    {   id: 1,
-        title: 'Work 1',
-        description: 'Lorem ipsum dolor sit amet,...',
-        image: myImage1,
-        alt: 'alt1',
+    {    id: 1,
+        title: 'WoodStock',
+        description: 'SKILLS: Reactjs, SCSS',
+        image: woodstock,
+        alt: 'woodstock',
+        link:'https://github.com/saralaloux/WoodStock',
     },
     {   
         id: 2,
-        title: 'Work 2',
-        description: 'Lorem ipsum dolor sit amet,...',
-        image: myImage3,
-        alt: 'alt2',
+        title: 'Cogip',
+        description: 'SKILLS: mYSQL, php, Javascript',
+        image: cogip,
+        alt: 'cogip',
+        link:'https://freyling-aurelien.be/PHP-Cogip//',
     },
     {
         id: 3,
-        title: 'Work 3',
-        description: 'Lorem ipsum dolor sit amet,...',
-        image: myImage4,
-        alt: 'alt3',
+        title: 'Hangman Game',
+        description: 'SKILLS: vanilla JS',
+        image: hangman,
+        alt: 'hangman',
+        link:'https://github.com/saralaloux/hangman_finish',
     },
     {
         id: 4,
-        title: 'Work 4',
-        description: 'Lorem ipsum dolor sit amet,...',
-        image: myImage6,
-        alt: 'alt4',
+        title: 'Some UI projects',
+        description: 'SKILLS: adobe photoshop',
+        image: arm,
+        alt: 'Athénée Royale de Mons',
+        link:'https://github.com/saralaloux/UI_design',
     }
 ]
 
 export const webProjects = [
-    {   id: 1,
-        title: 'Work 1',
-        description: 'Lorem ipsum dolor sit amet,...',
-        image: myImage1,
+    {   
+        id: 1,
+        title: 'WoodStock',
+        description: 'SKILLS: Reactjs, SCSS',
+        image: woodstock,
         alt: 'alt1',
+        link:'https://github.com/saralaloux/WoodStock',
     },
     {
-        id: 4,
-        title: 'Work 4',
-        description: 'Lorem ipsum dolor sit amet,...',
-        image: myImage6,
-        alt: 'alt4',
-    }
+        id: 2,
+        title: 'Cogip',
+        description: 'SKILLS: mYSQL, php, Javascript',
+        image: cogip,
+        alt: 'cogip',
+        link:'https://freyling-aurelien.be/PHP-Cogip//',
+    },
+    {
+        id: 3,
+        title: 'Hangman Game',
+        description: 'SKILLS: vanilla JS',
+        image: hangman,
+        alt: 'hangman',
+        link:'https://github.com/saralaloux/hangman_finish',
+    },
 ] 
 
 export const designProjects = [
     {   
-        id: 2,
-        title: 'Work 2',
-        description: 'Lorem ipsum dolor sit amet,...',
-        image: myImage3,
-        alt: 'alt2',
-    },
-    {
-        id: 3,
-        title: 'Work 3',
-        description: 'Lorem ipsum dolor sit amet,...',
-        image: myImage4,
-        alt: 'alt3',
+        id: 4,
+        title: 'Some UI projects',
+        description: 'SKILLS: adobe photoshop',
+        image: arm,
+        alt: 'Athénée Royale de Mons',
+        link:'https://github.com/saralaloux/UI_design',
     },
 ]
 

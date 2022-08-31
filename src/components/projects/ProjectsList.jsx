@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {listProject, allProjects, webProjects, designProjects} from '../../data';
 import ProjectItem from './ProjectItem';
 import {SiGithub} from 'react-icons/si';
-import {TbHandFinger} from 'react-icons/tb';
+// import {TbHandFinger} from 'react-icons/tb';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -47,10 +47,12 @@ const ProjectsList = () => {
                     <div className="card">
                     {data.map((work) => (
             <div className="card__wrapper" key={work.id}>
+                <a href={work.link}>
                 <img className="card__img" src={work.image} alt={work.alt}/>
                 <h3 className="card__title">{work.title}</h3>
                 <p className="card__description">{work.description}</p>
                     <SiGithub className='card__icon'/>
+                </a>
             </div>
             ))}
                     </div>
@@ -62,6 +64,7 @@ const ProjectsList = () => {
         slidesPerView={1}
         spaceBetween={20}
         loop={true}
+        navigation
         autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -73,17 +76,19 @@ const ProjectsList = () => {
             {data.map((work) => (
                 <SwiperSlide className="slider"
                 key={work.id}>
+                    <a href={work.link}>
                         <img className="slider__img" src={work.image} alt={work.alt}/>
                         <h3 className="slider__title">{work.title}</h3>
                         <p className="slider__description">{work.description}</p>
                     <SiGithub className='card__icon'/>
+                    </a>
                     </SwiperSlide>
+                    
             ))}
             </Swiper>
             
         </div>
 
-        <TbHandFinger className='hand' />
         </div>
     );
 };

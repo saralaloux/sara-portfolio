@@ -80,9 +80,28 @@
                             font-size: 1.2rem;
                             text-decoration: none;
                             color: inherit;
-                            padding: 0.75rem 1.25rem;
+                            margin: 0.75rem 1.25rem;
                             border-radius: 15px;
                             transition: 0.3s ease all;
+                            @include breakpoint(md) {
+                                position: relative;
+                                &:after {
+                                    content:'';
+                                    left: 0;
+                                    display: block;
+                                    position: absolute;
+                                    width: 0%;
+                                    height: 2px;
+                                    background-color: $primary;
+                                    transition: width 0.2s ease;
+                                }
+                                &:hover {
+                                    &:after {
+                                        width: 100%;
+                                        transition: width 0.5s ease;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

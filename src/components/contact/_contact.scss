@@ -1,7 +1,7 @@
 .contact {
     display: flex;
     flex-direction: column;  
-    margin: $spacing-48 auto $spacing-80 auto;  
+    margin: $spacing-48 auto 100px auto;  
     // height: 100vh;
 
     @include breakpoint(md) {

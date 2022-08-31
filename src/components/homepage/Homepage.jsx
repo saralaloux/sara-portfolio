@@ -32,11 +32,11 @@ export default function Homepage () {
                 </div>
             </div>
             <div className="homepage__buttons">
-                <a href="#contact">
-                <button className="homepage__buttons__dark">Get In Touch</button>
+                <a href="https://www.linkedin.com/in/saralaloux/">
+                <button className="homepage__buttons__dark">Linkedin's profile</button>
                 </a>
                 <a
-        href={cv} download>
+                href={cv} download>
                 <button className="homepage__buttons__light">download resume</button>
                 </a>
             </div>
