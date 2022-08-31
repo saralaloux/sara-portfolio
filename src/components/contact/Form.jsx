@@ -1,12 +1,9 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Form = () => {
 
     const form = useRef();
-
-
-        const [done, setDone] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -18,7 +15,7 @@ const Form = () => {
             'user_VYFLIA1e26gsolGaLqzXP')
           .then((result) => {
               console.log(result.text);
-              setDone(true)
+            //   setDone(true)
               window.location.reload();
           }, (error) => {
               console.log(error.text);
@@ -33,7 +30,7 @@ const Form = () => {
     <span className="input__placeholder">Name</span>
 </label>
 <label className="input">
-    <input className="input__field input__size" name='mail' type="text" placeholder=" " />
+    <input className="input__field input__size" name='mail' type="mail" />
     <span className="input__placeholder">Mail Adress</span>
 </label>
 <label className="input">

@@ -3,6 +3,7 @@ import { init } from "ityped";
 import { useEffect, useRef } from "react";
 // import {TiSocialLinkedinCircular} from "react-icons/ti";
 // import {DiGithubBadge} from "react-icons/di"
+import cv from '../../assets/cv-sl-frontend.pdf';
 
 export default function Homepage () {
     const textRef = useRef();
@@ -31,9 +32,16 @@ export default function Homepage () {
                 </div>
             </div>
             <div className="homepage__buttons">
+                <a href="#contact">
                 <button className="homepage__buttons__dark">Get In Touch</button>
-                <button className="homepage__buttons__light">My projects</button>
+                </a>
+                <a
+        href={cv} download>
+                <button className="homepage__buttons__light">download resume</button>
+                </a>
             </div>
+            <div>
+    </div>
             {/* <div className="homepage__link">
                 <ul>
                     <li><Link to="https://github.com/saralaloux"><DiGithubBadge /></Link></li>

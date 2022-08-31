@@ -75,7 +75,7 @@
     &__placeholder {
       position: absolute;
       left: 20px;
-      top: 22px;
+      top: 25px;
       color: grey;
       transition: transform 120ms ease-in;
     }
@@ -92,7 +92,7 @@
           padding: 0 0.4rem;
           animation-duration: 0.3s;
           animation-name: moveOn;
-          transform: translateY(-120%) scale(0.9);
+          transform: translateY(-125%) scale(0.9);
         }
       }
     }
@@ -116,6 +116,6 @@
       transform: none;
     }
     to {
-      transform: translateY(-120%) scale(0.9);
+      transform: translateY(-125%) scale(0.9);
     }
   }
