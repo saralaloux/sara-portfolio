@@ -10,7 +10,10 @@ import Projects from './components/projects/Projects';
 function App() {
   return (
     <div className="app">
+      <header>
         <Navbar />
+      </header>
+
       <main>
         <Homepage />
         {/* <Services /> */}

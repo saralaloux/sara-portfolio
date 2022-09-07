@@ -1,9 +1,12 @@
-.header {
+
+
+header {
+    display: fixed;
+}.header {
     font-family: $font1;
     height: 70px;
     width: 100%;
     transition: 0.3s ease all;
-    position: relative;
     z-index: 3;
     &__content {
         padding: 0 2rem;

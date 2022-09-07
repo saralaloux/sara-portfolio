@@ -33,7 +33,7 @@ export default function Homepage () {
             </div>
             <div className="homepage__buttons">
                 <a href="https://www.linkedin.com/in/saralaloux/">
-                <button className="homepage__buttons__dark">Linkedin's profile</button>
+                <button className="homepage__buttons__dark">My Linkedin</button>
                 </a>
                 <a
                 href={cv} download>
